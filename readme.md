@@ -64,7 +64,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s):**
 
-![header](images/header_Unox.png)
+![header](images/header_Unox.PNG)
 ![header](images/show_products_Unox.png)
 ![header](images/recepten_Unox.png)
 ![header](images/kooktips_Unox.png)
