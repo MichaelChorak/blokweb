@@ -65,10 +65,10 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 **Screenshot(s):**
 
 ![header](images/header_Unox.PNG)
-![header](images/show_products_Unox.png)
-![header](images/recepten_Unox.png)
-![header](images/kooktips_Unox.png)
-![header](images/footer_Unox.png)
+![producten](images/show_products_Unox.PNG)
+![recepten](images/recepten_Unox.PNG)
+![kooktips](images/kooktips_Unox.PNG)
+![footer](images/footer_Unox.PNG)
 
 
 **Breakdown-schets(en):**
