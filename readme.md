@@ -1,5 +1,5 @@
 # Procesverslag
-Michael Chorak
+**Auteur:** -jouw naam-
 
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
@@ -56,23 +56,16 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Intake (week 1)
 
-**Je startniveau:** Rode pieste
+**Je startniveau:** -kies uit zwart, rood óf blauw-
 
-**Je focus:** - Mijn keuze is responsive
+**Je focus:** -kies uit responsive óf surface plane-
 
-**Je opdracht:** -https://www.unox.nl/
+**Je opdracht:** -link naar de website die je gaat namaken óf de naam van je eigen ontwerp-
 
 **Screenshot(s):**
 
-![header](images/header_Unox.PNG)
-![producten](images/show_products_Unox.PNG)
-![recepten](images/recepten_Unox.PNG)
-![kooktips](images/kooktips_Unox.PNG)
-![footer](images/footer_Unox.PNG)
-
+![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/dummy-image.svg)
 
 **Breakdown-schets(en):**
 
-![voorlopige breakdownschets](images/breakdown_Schets.png)
-
-
+![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/dummy-image.svg)
