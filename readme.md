@@ -56,7 +56,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Intake (week 1)
 
-**Je startniveau:** Rode pieste
+**Je startniveau:** Blauwe pieste
 
 **Je focus:** - Mijn keuze is responsive
 
