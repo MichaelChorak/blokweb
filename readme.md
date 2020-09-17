@@ -33,21 +33,24 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 -same as voortgang 1-
 
 
-
 ## Voortgang 1 (week 3)
 
-### Stand van zaken
+1 Pagina bijna volledig af wat betreft HTML en CSS. JS ontbreekt voor de sliders en footer informatie
 
 -dit ging goed & dit was lastig-
+Ik ben opnieuw begonnen want de eerste versie was een mess en kwam er niet meer uit.
+Ben aan een 2e versie begonnen met een betere structuur en logischere opmaak.
+Positioneren en dergelijke ging goed voor mobile first, voor desktop ziet het er niet uit.
 
 **Screenshot(s):**
+![header](images/huidig.PNG)
 
 -screenshot(s) van hoe ver je bent-
 
 ### Agenda voor meeting
 
--samen met je groepje opstellen-
-
+We hebben een meeting gehad. Alleen geen concrete vragen uit gekomen. Meer onze huidige voortgang bespreken en
+wat hulp vragen wat betreft de sliders in JS
 ### Verslag van meeting
 
 -na afloop snel uitkomsten vastleggen-
