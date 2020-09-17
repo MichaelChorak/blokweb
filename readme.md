@@ -43,7 +43,7 @@ Ben aan een 2e versie begonnen met een betere structuur en logischere opmaak.
 Positioneren en dergelijke ging goed voor mobile first, voor desktop ziet het er niet uit.
 
 **Screenshot(s):**
-![huidig](images/huidig.PNG)
+![huidig](images/huidig.png)
 
 -screenshot(s) van hoe ver je bent-
 
