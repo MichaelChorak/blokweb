@@ -1,14 +1,14 @@
 html,body {
   /* width: 100%; */
   height: auto;
-  background-image: url(/blokweb/images/achtergrond.jpg);
+  background-image: url(/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/images/achtergrond.jpg);
   margin: 0;
   background-repeat: round;
 }
 
 @font-face {
   font-family: unoxFont;
-  src: url(/blokweb/fonts/eveleth/eveleth_regular.ttf);
+  src: url(/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/fonts/eveleth/eveleth_regular.ttf);
 }
 
 h1, h2, h3, h4 {
@@ -94,7 +94,7 @@ header > section:first-of-type > div {  /*hamburger menu */
 .hamburgerMenu {
   background-color: #fff;
   border: none;
-  background-image: url(/blokweb/images/product/hamburgerMenuBG.png);
+  background-image: url(/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/images/product/hamburgerMenuBG.png);
   height: 45px;
   width: 45px;
   background-size: contain;
@@ -107,7 +107,7 @@ header > section:first-of-type > div {  /*hamburger menu */
 
   main > section:nth-of-type(1) {
   height: 225px;
-  background-image: url(/blokweb/images/bgheader.jpg);
+  background-image: url(/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/images/bgheader.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -153,9 +153,6 @@ main > section:nth-of-type(1) > button {
 .universalHR {
   width: 80%;
   color: brown;
-  position: absolute;
-  bottom: 0;
-  left: 10%;
 }
 
 /* Favoriete producten sectie */
@@ -163,7 +160,9 @@ main > section:nth-of-type(1) > button {
 main > section:nth-of-type(2){
   position: relative;
   height: 600px;
-  margin-top: 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 
@@ -171,9 +170,6 @@ main > section:nth-of-type(2){
 .product1 {
   position: relative;
   text-align: center;
-  height: 225px;
-  width: 60%;
-  margin-left: 20%;
 
 }
 
@@ -199,7 +195,7 @@ main > section:nth-of-type(2) > div > h2 {
 }
 
 main > section:nth-of-type(2) > a {
-  position: absolute;
+  text-align: center;
   bottom: 40px;
   background-color: transparent;
   color: #432e1b;
@@ -353,7 +349,7 @@ main > section:nth-of-type(5) {
   flex-direction: column;
   align-items: center;
   margin: 30% 5% 5% 5%;
-  background-image: url(/blokweb/images/recept1.jpg);
+  background-image: url(/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/images/recept1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: unoxFont;
@@ -425,7 +421,7 @@ section:last-of-type > div > form > button {
 footer > section {
   position: relative;
   height: auto;
-  background-image: url(/blokweb/images/footerbg.jpg);
+  background-image: url(/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/images/footerbg.jpg);
   background-repeat: repeat-x;
   background-size: cover;
   background-color: #4f5360;
