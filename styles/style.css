@@ -1,7 +1,7 @@
 html,body {
   /* width: 100%; */
   height: auto;
-  background-image: url(/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/images/achtergrond.jpg);
+  background-image: url(/herontwerp-basiswebsite/images/achtergrond.jpg);
   margin: 0;
   background-repeat: round;
 }
