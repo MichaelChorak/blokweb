@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="styles/style.css">
 	<link rel="icon" href="/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/images/logo.jpg">
+
 	<title>Unox - Heerlijke oer-Hollande producten van Unox!| Unox</title>
 
 </head>
@@ -15,62 +16,73 @@
 <header>
 	<section>
 		<img src="images/logo.jpg" alt="">
+		<button type="button" name="button" class="hamburgerMenu"></button>
+		<div id="menuItems">
+	      <ul>
+	        <li><a href="https://www.unox.nl">Producten</a></li>
+	        <li>Recepten</li>
+	        <li>Over Unox</li>
+	        <li>Duurzaamheid</li>
+	        <li>Nieuws</li>
+	      </ul>
+			</div>
 	</section>
 </header>
 
 <main>
 
-	<section class="sectionNieuw">
-		<!-- <img src="/herontwerp-basiswebsite/images/bgheader.jpg" alt=""> -->
-			<div class="">
-				<!-- p = h1 -->
-				<p>nieuw!</p>
+	<section>
+			<div>
+				<h1>nieuw!</h1>
 			</div>
 		<button type="button" name="button">Lees hier verder</button>
 	</section>
 
-<div class="hierKomtDeNav" style="">
+	<div class="divHR" style="">
 			<hr class="universalHR">
 	</div>
 
-	<section class="sectionFavProducten">
-		<div class="">
-			<!-- p = h2 -->
-			<p>Favoriete producten</p>
+
+	<section>
+		<div>
+			<h2>Favoriete producten</h2>
 		</div>
 		<section class="product1">
 			<img src="images/product1.jpg" alt="">
-			<!-- p = h3 -->
 			<h3>Good noodles kip</h3>
 		</section>
 		<a href="#">Bekijk alle producten</a>
 		<hr>
 	</section>
 
-	<section class="sectionRecepten">
-		<div class="">
-			<!-- p = h3 -->
-			<p>Recepten</p>
+	<section> <!-- main -> 3th type section  -->
+		<div>
+			<h3>Recepten</h3>
 		</div>
-		<div class="card-Position">
+			<div>
 				<div class="card">
-		  			<img src="/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/images/recept1.jpg" alt="Avatar" style="width:100%">
-		  		<div class="container">
-		    		<p>De klassieke andijviestamppot</p>
-		  		</div>
+			  	<img src="/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/images/recept1.jpg" alt="Avatar" style="width:100%">
+			  		<div class="container">
+			    		<p>De klassieke andijviestamppot</p>
+			  		</div>
+				</div>
 			</div>
-		</div>
 		<a href="#">Bekijk alle recepten</a>
 	</section>
 
+	<!-- einde recepten section..moet slider worden! -->
+
+	<div class="gek">
+		<p>testjoh</p>
+	</div>
 	<!-- kooktips secties -->
-	<section class="sectionKookTips">
-		<!-- <h2>Kooktips</h2> -->
+	<!-- main -> 4th type section  -->
+	<section>
 		<div>
-			<p>Kooktips</p>
+			<h2>Kooktips</h2>
 		</div>
 
-		<div class="card-PositionTip">
+ 		<div class="card-PositionTip"> 		<!--section 4 : div nth child 2 -->
 				<div class="cardTip">
 						<img src="images/tip1.jpg" alt="Avatar" style="width:100%">
 					<div class="containerTip">
@@ -102,7 +114,7 @@
 
 	</section>
 
-	<section class="nieuwsbrief">
+	<section>
 		<h1>schrijf je in voor de nieuwsbrief</h1>
 		<p>Ontvang lekkere inspiratie, leuke feitjes en meer informatie over onze acties</p>
 		<button type="button" name="button">Schrijf je in</button>
@@ -113,11 +125,57 @@
 
 <footer>
 	<section>
+		<div>
+			<h3>Schrijf je in voor de nieuwsbrief</h3>
+		</div>
+		<div>
+			<form class="" action="emailDB" method="post">
+				<input type="email" name="" value="" placeholder="email">
+				<button type="button" name="button"></button>
+			</form>
+		</div>
 
-	</section>
+		<div>
+				<div>
+					<p>Volg ons</p>
+					<div>
+						<p>Facebook			Instagram</p>
+					</div>
+				</div>
+
+				<div>
+					<p>© 2020 Unilever. Alle rechten voorbehouden.</p>
+					<p>Deze website is uitsluitend bestemd voor Nederlandse consumenten voor producten en diensten van Unilever Nederland. Deze website is niet gericht op consumenten buiten Nederland.</p>
+				</div>
+
+				<section>
+					<strong>Legal</strong>
+					<ul class="paddingUl">
+						<li><p>Privacykennisgeving</p></li>
+						<li><p>Cookieverklaring</p></li>
+						<li><a href="https://www.unilever.nl/legal.html">Gebruiksvoorwaarden</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<strong>FAQ</strong>
+				<p><a href="https://www.unilever.nl/legal.html">Veelgestelde vragen</a></p>
+				</section>
+
+				<section class="sectionPadding">
+					<strong>Klantenservice</strong>
+					<ul class="paddingUl">
+						<li><p>Contact</p></li>
+						<li><p>Sitemap</p></li>
+						<li><a href="https://www.unilever.nl/legal.html">Professionals</a></li>
+					</ul>
+				</section>
+
+		</section>
+	</div>
 </footer>
 
-	<script src="scripts/script.js"></script>
+			<script src="scripts/script.js"></script>
 </body>
 
 </html>
