@@ -7,3 +7,19 @@ var menu = document.querySelector('#menuItems');
  }
 
  toggleMenu.addEventListener('click', toonMenu);
+
+
+//tab-content script
+
+const tabs = document.querySelectorAll('[data-tab-target]');
+const tabsContent = document.querySelectorAll('[data-tab-content]')
+
+tabs.forEach( tabs => {
+  tabs.addEventListener('click', () => {
+    const target = document.querySelector(tabs.dataset.tabTarget)
+    tabsContent.forEach(tabsContent => {
+      tabsContent.classList.remove('active')
+    })
+    target.classList.add('active');
+  })
+})

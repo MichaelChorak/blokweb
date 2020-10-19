@@ -29,12 +29,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Voortgang 2 (week 5)
-Mobile only pagina 1 af, wil deze perfectioneren voordat ik aan 2e begin omdat ik steeds meer ontdek tijdens het maken en veel moet wijzigen. Eerlijk gezegd niet heel veel voortgang geboekt, Hamburger menu deels gemaakt en footer content. Nog aan het werk met positioneren en hierna wil ik me focussen op responsiveness want dan ontbreekt nu wel.
-Kijken of ik dit met media querys ga doen en kijken naar grid. Het begin is er wel, ontbreekt nog wel veel maar heb het gevoel dat ik sneller aanpassingen kan maken dan voorheen dus dit zou vanaf nu sneller moeten gaan.
 
-![hb-menu](images/voortgang2-1.PNG)
-![hb-menu](images/voortgang2-2.PNG)
-![hb-menu](images/voortgang2-3.png)
+-same as voortgang 1-
 
 
 ## Voortgang 1 (week 3)
