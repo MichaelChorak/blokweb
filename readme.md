@@ -32,6 +32,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 Veel aan de index pagina begonnen. Vooral aan de items met een soort slideshow. Deze kan je nu sliden v.l.n.r en vice versa
 ![slider](images/slider.png)
+Ook heb ik een footer gemaakt die kan worden hergebruikt voor beide pagina's. Buiten dat een klein beetje javascript voor het menu
+![menu](images/menu.png)
+![footer](images/footer.png)
 
 
 ## Voortgang 1 (week 3)
