@@ -14,7 +14,12 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+De breakdown-points kiezen vond ik lastig en het juist positioneren van elementen was soms ook een enorme klus.
+Wat betreft animatie/javascript is het een beetje schaars. Had hier wel wat meer tijd aan willen besteden helaas.
+Voor de rest ging het vrij goed, eerste keer dat ik gelet heb op minder classes en divjes gebruik, zou in de toekomst natuurlijk nog beter moeten gaan maar het
+semenatische gedeelte en nth-of-type selectoren snap ik nu wel goed.
+
+Over het algemeen ben ik vrij blij met het resultaat. De volgende keer zou het misschien nog wat overzichtelijker in elkaar worden gezet. En meer complexiteit worden toegevoegd voor een nog leuker resultaat.
 
 **Screenshot(s):**
 
