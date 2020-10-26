@@ -23,10 +23,15 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Voortgang 3 (week 6)
+Begonnen aan de detailpagina. Header en footer waren al aanwezig dus we moesten werken aan main content.
+Omdat ik voor het responsive gedeelte heb gekozen moest er veel elementen bewegen, dit was wel lastig om de juiste breakpoints te kiezen. 
+Ik ben gaan werken met media queries en zo ziet het er op dit moment uit:
 
--same as voortgang 1-
+![main](images/main.png)
+![ipad](images/main1.png)
 
-
+Nu moeten we de puntjes nog op de i zetten en ben van plan om een scroll to top button te maken.
+Ook heb ik tijd geinvesteerd in het maken van een darkmode, helaas ben ik hier iets te laat mee begonnen en heb ik dit niet volledig werkend kunnen krijgen
 
 ## Voortgang 2 (week 5)
 
