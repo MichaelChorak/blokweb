@@ -13,7 +13,19 @@
     <header>
     		<img src="images/logo.jpg" alt="">
     		<button type="button" name="button" class="hamburgerMenu"></button>
-    			<nav id="menuItems">
+        <nav class="groteSchermNav">
+          <ul>
+            <li>Producten</a></li>
+            <li>Recepten</li>
+            <li>Over Unox</li>
+            <li>Duurzaamheid</li>
+            <li>Nieuws</li>
+          </ul>
+        </nav>
+    			<nav class="menuItems">
+            <div id="kruisjeMenu">
+    					<span>&#10006;</span>
+    				</div>
     	      <ul>
     	        <li><a href="https://www.unox.nl">Producten</a></li>
     	        <li>Recepten</li>
@@ -26,20 +38,21 @@
 
     <main>
       <section id="inleidingDetails">
-        <img src="/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/images/rookworst.jpg" alt="">
+          <img src="/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/images/rookworst.jpg" alt="">
 
         <!-- //dit moet in een div worden gewrapped bij een minimale breedte van 768px en naast de image worden geplaatst-->
-      <section class="testClass">
+      <section class="testClass" tabindex="0">
           <h1>Gelderse rookworst</h1>
             <p>Deze Unox rookworst wordt gemaakt van de beste ingrediënten zoals kwaliteitsvlees met het Beter Leven kenmerk, en bereid met de unieke Unox kruiden. Heerlijk bij een stamppot.</p>
             <!-- <hr class="HRbreed"> -->
-          <button type="button" name="button">Kies je retailer</button>
+          <button type="button" name="button" tabindex="0">Kies je retailer</button>
 
           <div class="inleidingDetailsOnder">
-              <span>&#9993;</span>
-                <span class="fa fa-facebook" aria-hidden="true"></span>
-              <span class="fa fa-pinterest" aria-hidden="true"></span>
+            <span>&#9993;</span>
+              <span class="fa fa-facebook" aria-hidden="true"></span>
+            <span class="fa fa-pinterest" aria-hidden="true"></span>
           </div>
+
         </section>
 
       </section>
@@ -49,46 +62,46 @@
 <!-- Tabs structuur, 3 kops -->
       <div id="tabsStructuur">
         <ul>
-          <li data-tab-target="#beschrijving">Beschrijving</li>
-          <li data-tab-target="#ingredienten">ingredienten</li>
-          <li data-tab-target="#bereidingswijze">Bereidingswijze</li>
+          <li data-tab-target="#beschrijving" tabindex="0">Beschrijving</li>
+          <li data-tab-target="#ingredienten" tabindex="0">ingredienten</li>
+          <li data-tab-target="#bereidingswijze" tabindex="0">Bereidingswijze</li>
         </ul>
 
       <div class="tab-content">
         <div id="beschrijving" data-tab-content>
-          <p>Unox Gelderse rookworst is een van de heerlijke producten van Unox. Al 80 jaar is Unox onlosmakelijk verbonden aan de Hollandse keuken. Inmiddels zijn veel Nederlandse huishoudens fan van Unox producten. Over het ontstaan van de merknaam Unox gaan verschillende verhalen. De een beweert dat iemand eens bedacht heeft om Unilever, Oss en Ox (Engels voor os) samen te voegen tot Unox. En anderen zweren dat de naam een uitkomst is van een prijsvraag onder werknemers. Hoe het ook zij, vanaf 1937 worden onder de merknaam Unox de lekkerste rookworsten gemaakt. En tegenwoordig maken we niet alleen rookworsten, maar ook soep, knaks, snacks en sinds kort zelfs vegetarische gehaktballetjes. Zo is er dus een voorgerecht, hoofdgerecht of snack voor iedereen. Wij geloven dat de lekkerste producten alleen gemaakt kunnen worden van de beste ingrediënten en daarom werken wij continu aan het verbeteren van onze producten. Daarnaast vinden wij dierenwelzijn bij Unox erg belangrijk. Het grootste deel van onze rookworsten draagt daarom ook het Beter Leven Keurmerk. Onze Beter Leven boeren en boerinnen werken met zorg aan de allerlekkerste rookworsten. Maak kennis met een aantal van deze boeren. Je kan namelijk zien bij welke boer het vlees van de rookworst vandaan komt via een code op de achterkant van elke verpakking. Zo zorgen wij ervoor dat ook de komende generaties op een verantwoorde manier kunnen genieten van onze producten.</p>
+          <p class="pTabContent">Unox Gelderse rookworst is een van de heerlijke producten van Unox. Al 80 jaar is Unox onlosmakelijk verbonden aan de Hollandse keuken. Inmiddels zijn veel Nederlandse huishoudens fan van Unox producten. Over het ontstaan van de merknaam Unox gaan verschillende verhalen. De een beweert dat iemand eens bedacht heeft om Unilever, Oss en Ox (Engels voor os) samen te voegen tot Unox. En anderen zweren dat de naam een uitkomst is van een prijsvraag onder werknemers. Hoe het ook zij, vanaf 1937 worden onder de merknaam Unox de lekkerste rookworsten gemaakt. En tegenwoordig maken we niet alleen rookworsten, maar ook soep, knaks, snacks en sinds kort zelfs vegetarische gehaktballetjes. Zo is er dus een voorgerecht, hoofdgerecht of snack voor iedereen. Wij geloven dat de lekkerste producten alleen gemaakt kunnen worden van de beste ingrediënten en daarom werken wij continu aan het verbeteren van onze producten. Daarnaast vinden wij dierenwelzijn bij Unox erg belangrijk. Het grootste deel van onze rookworsten draagt daarom ook het Beter Leven Keurmerk. Onze Beter Leven boeren en boerinnen werken met zorg aan de allerlekkerste rookworsten. Maak kennis met een aantal van deze boeren. Je kan namelijk zien bij welke boer het vlees van de rookworst vandaan komt via een code op de achterkant van elke verpakking. Zo zorgen wij ervoor dat ook de komende generaties op een verantwoorde manier kunnen genieten van onze producten.</p>
         </div>
 
         <div id="ingredienten" data-tab-content>
-          <p>Ingrediënten: Varkensvlees 94% (waarvan 18% separatorvlees), water, zout, voedingszuur: citroenzuur, rundercollageen, stabilisator (E451, E452), rookaroma, antioxidant (ascorbinezuur, rozemarijnextract), specerij-extracten (nootmuskaat, peper, chilipeper), korianderextract, conserveermiddel E250. E = door de E.G. goedgekeurde hulpstof</p>
+          <p class="pTabContent">Ingrediënten: Varkensvlees 94% (waarvan 18% separatorvlees), water, zout, voedingszuur: citroenzuur, rundercollageen, stabilisator (E451, E452), rookaroma, antioxidant (ascorbinezuur, rozemarijnextract), specerij-extracten (nootmuskaat, peper, chilipeper), korianderextract, conserveermiddel E250. E = door de E.G. goedgekeurde hulpstof</p>
         </div>
 
         <div id="bereidingswijze" data-tab-content>
-          <p>ZO MAAK JE 'M KLAAR IN EEN PAN Leg de rookworst - in de gesloten binnenzak - een kwartier in heet, maar niet kokend water. Laat de worst nog een minuutje liggen alvorens 'm aan te snijden. IN DE MAGNETRON Haal de rookworst uit de buitenverpakking, prik een gaatje in de binnenverpakking en verwarm 'm 2½ minuut op 500 Watt. Laat de worst een minuutje liggen alvorens 'm aan te snijden. Eet smakelijk!</p>
+          <p class="pTabContent">ZO MAAK JE 'M KLAAR IN EEN PAN Leg de rookworst - in de gesloten binnenzak - een kwartier in heet, maar niet kokend water. Laat de worst nog een minuutje liggen alvorens 'm aan te snijden. IN DE MAGNETRON Haal de rookworst uit de buitenverpakking, prik een gaatje in de binnenverpakking en verwarm 'm 2½ minuut op 500 Watt. Laat de worst een minuutje liggen alvorens 'm aan te snijden. Eet smakelijk!</p>
         </div>
       </div>
     </div>
 
     <section>
-      <h2>Gerelateerde producten</h2>
+      <h2 tabindex="0">Gerelateerde producten</h2>
         <div>
-          <article class="product1">
+          <article class="product1" tabindex="0">
               <img src="images/smac.png" alt="">
               <h3>Smac</h3>
           </article>
 
           <article class="product1">
-              <img src="images/runderRookWorst.png" alt="">
+              <img src="images/runderRookWorst.png" alt="Runder rookworst | Unox" tabindex="0">
               <h3>Runder rookworst</h3>
           </article>
 
           <article class="product1">
-              <img src="images/magereRookWorst.png" alt="">
+              <img src="images/magereRookWorst.png" alt="Magere rookworst | Unox" tabindex="0">
               <h3>Extra magere rookworst magnetron</h3>
           </article>
 
           <article class="product1">
-              <img src="images/rookWorstPeper.png" alt="">
+              <img src="images/rookWorstPeper.png" alt="Rookworst peper | Unox" tabindex="0">
               <h3>proevervij rookworst met peper</h3>
           </article>
         </div>
@@ -100,22 +113,22 @@
         <!-- /* Maak een class, hergebruik x3 */ -->
         <div class="container">
 
-          <div class="receptKaart">
+          <div class="receptKaart" tabindex="0">
             <img src="/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/images/stoofpotje.jpg" alt="Unox andijviestamppot">
             <p>VEGETARISCHE STOOF MET GEROOSTERDE WINTERGROENTEN EN ZOETZURE RODE KOOL</p>
           </div>
 
-          <div class="receptKaart">
+          <div class="receptKaart" tabindex="0">
             <img src="/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/images/briefbg.jpg" alt="Unox SPINAZIESTAMPPOT">
             <p>DE KLASSIEKE ANDIJIVIESTAMPPOT</p>
           </div>
 
-          <div class="receptKaart">
+          <div class="receptKaart" tabindex="0">
             <img src="/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/images/zuurkool.jpg" alt="Unox LENTESTAMPPOT">
             <p>BROODJE ZUURKOOL MET VEGA ROOKWORST EN GEBAKKEN UIRINGEN</p>
           </div>
 
-          <div class="receptKaart">
+          <div class="receptKaart" tabindex="0">
             <img src="/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/images/hotdog.jpg" alt="Unox PREISTAMPPOT">
             <p>HOLLANDSE HOTDOG</p>
           </div>
@@ -125,61 +138,59 @@
 
     <a href="#" class="linkCenter">Bekijk alle recepten</a>
 
+    <section class="nieuwsbrief">
+      <h1>schrijf je in voor de nieuwsbrief</h1>
+      <p>Ontvang lekkere inspiratie, leuke feitjes en meer informatie over onze acties</p>
+      <button type="button" name="button">Schrijf je in</button>
+    </section>
 
 
     </main>
 
-
-
     <footer>
+    	<button type="button" name="button" id="scrollBtn">&#8593;</button>
+    	<section>
+    			<h3>Schrijf je in voor de nieuwsbrief</h3>
 
-    <section>
-        <h3>Schrijf je in voor de nieuwsbrief</h3>
+    		<div>
+    			<form class="" action="emailDB" method="post">
+    				<input type="email" name="email" value="" placeholder="email">
+    				<button type="button" name="button"></button>
+    			</form>
+    		</div>
 
-      <div>
-        <form class="" action="emailDB" method="post">
-          <input type="email" name="email" value="" placeholder="email">
-          <button type="button" name="button"></button>
-        </form>
-      </div>
 
-      <div>
-          <div>
-            <p>Volg ons</p>
-            <div>
-              <p>Facebook			Instagram</p>
-            </div>
-          </div>
 
-          <div>
-            <p>© 2020 Unilever. Alle rechten voorbehouden.</p>
-            <p>Deze website is uitsluitend bestemd voor Nederlandse consumenten voor producten en diensten van Unilever Nederland. Deze website is niet gericht op consumenten buiten Nederland.</p>
-          </div>
+    			<p>Volg ons</p>
+    				<p>Facebook			Instagram</p>
+    					<p>© 2020 Unilever. Alle rechten voorbehouden.</p>
+    				<p>Deze website is uitsluitend bestemd voor Nederlandse consumenten voor producten en diensten van Unilever Nederland. Deze website is niet gericht op consumenten buiten Nederland.</p>
 
-          <section>
-            <h5>Legal</h5>
-            <ul class="paddingUl">
-              <li><p>Privacykennisgeving</p></li>
-              <li><p>Cookieverklaring</p></li>
-              <li><a href="https://www.unilever.nl/legal.html">Gebruiksvoorwaarden</a></li>
-            </ul>
-          </section>
+    				<section>
+    					<h5>Legal</h5>
+    					<ul class="paddingUl">
+    						<li><p>Privacykennisgeving</p></li>
+    						<li><p>Cookieverklaring</p></li>
+    						<li><a href="https://www.unilever.nl/legal.html">Gebruiksvoorwaarden</a></li>
+    					</ul>
+    				</section>
 
-          <section>
-            <h5>FAQ</h5>
-          <p><a href="https://www.unilever.nl/legal.html">Veelgestelde vragen</a></p>
-          </section>
+    				<section>
+    					<h5>FAQ</h5>
+    					<p><a href="https://www.unilever.nl/legal.html">Veelgestelde vragen</a></p>
+    				</section>
 
-          <section class="sectionPadding">
-            <h5>Klantenservice</h5>
-            <ul class="paddingUl">
-              <li><p>Contact</p></li>
-              <li><p>Sitemap</p></li>
-              <li><a href="https://www.unilever.nl/legal.html">Professionals</a></li>
-            </ul>
-          </section>
-        </div>
-      </section>
+    				<section>
+    					<h5>Klantenservice</h5>
+    					<ul class="paddingUl">
+    						<li><p>Contact</p></li>
+    						<li><p>Sitemap</p></li>
+    						<li><a href="https://www.unilever.nl/legal.html">Professionals</a></li>
+    					</ul>
+    				</section>
+
+    		</section>
+
     </footer>
 
 
