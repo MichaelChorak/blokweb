@@ -30,7 +30,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+Veel aan de index pagina begonnen. Vooral aan de items met een soort slideshow. Deze kan je nu sliden v.l.n.r en vice versa
+![slider](readme/images/slider.png)
 
 
 ## Voortgang 1 (week 3)
