@@ -2,8 +2,15 @@
 var toggleMenu = document.querySelector('.hamburgerMenu');
 var menu = document.querySelector('#menuItems');
 
+const tabs = document.querySelectorAll('[data-tab-target]');
+const tabsContent = document.querySelectorAll('[data-tab-content]')
+
  function toonMenu(){
      menu.classList.toggle('fadeIn');
+ }
+
+ function toggleTekst(){
+   tabs.classList.toggle('active');
  }
 
  toggleMenu.addEventListener('click', toonMenu);
@@ -11,8 +18,6 @@ var menu = document.querySelector('#menuItems');
 
 //tab-content script
 
-const tabs = document.querySelectorAll('[data-tab-target]');
-const tabsContent = document.querySelectorAll('[data-tab-content]')
 
 tabs.forEach( tabs => {
   tabs.addEventListener('click', () => {

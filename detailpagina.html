@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="nl" dir="ltr">
   <head>
     <meta charset="UTF-8">
   	<meta name="author" content="Michael">
@@ -27,18 +27,21 @@
     <main>
       <section id="inleidingDetails">
         <img src="/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/images/rookworst.jpg" alt="">
+
+        <!-- //dit moet in een div worden gewrapped bij een minimale breedte van 768px en naast de image worden geplaatst-->
+      <section class="testClass">
           <h1>Gelderse rookworst</h1>
             <p>Deze Unox rookworst wordt gemaakt van de beste ingrediënten zoals kwaliteitsvlees met het Beter Leven kenmerk, en bereid met de unieke Unox kruiden. Heerlijk bij een stamppot.</p>
-            <hr class="HRbreed">
+            <!-- <hr class="HRbreed"> -->
           <button type="button" name="button">Kies je retailer</button>
 
           <div class="inleidingDetailsOnder">
-            <div>
               <span>&#9993;</span>
                 <span class="fa fa-facebook" aria-hidden="true"></span>
               <span class="fa fa-pinterest" aria-hidden="true"></span>
-            </div>
           </div>
+        </section>
+
       </section>
 
 
@@ -93,7 +96,7 @@
     </section>
 
     <section> <!-- main -> 3th type section  -->
-        <h2>Onze heerlijke recepten</h2>
+        <h2 style="font-size: 2em; color: #432e1b">Onze heerlijke recepten</h2>
         <!-- /* Maak een class, hergebruik x3 */ -->
         <div class="container">
 
@@ -120,11 +123,65 @@
         </div>
     </section>
 
+    <a href="#" class="linkCenter">Bekijk alle recepten</a>
+
+
+
     </main>
+
+
 
     <footer>
 
+    <section>
+        <h3>Schrijf je in voor de nieuwsbrief</h3>
+
+      <div>
+        <form class="" action="emailDB" method="post">
+          <input type="email" name="email" value="" placeholder="email">
+          <button type="button" name="button"></button>
+        </form>
+      </div>
+
+      <div>
+          <div>
+            <p>Volg ons</p>
+            <div>
+              <p>Facebook			Instagram</p>
+            </div>
+          </div>
+
+          <div>
+            <p>© 2020 Unilever. Alle rechten voorbehouden.</p>
+            <p>Deze website is uitsluitend bestemd voor Nederlandse consumenten voor producten en diensten van Unilever Nederland. Deze website is niet gericht op consumenten buiten Nederland.</p>
+          </div>
+
+          <section>
+            <h5>Legal</h5>
+            <ul class="paddingUl">
+              <li><p>Privacykennisgeving</p></li>
+              <li><p>Cookieverklaring</p></li>
+              <li><a href="https://www.unilever.nl/legal.html">Gebruiksvoorwaarden</a></li>
+            </ul>
+          </section>
+
+          <section>
+            <h5>FAQ</h5>
+          <p><a href="https://www.unilever.nl/legal.html">Veelgestelde vragen</a></p>
+          </section>
+
+          <section class="sectionPadding">
+            <h5>Klantenservice</h5>
+            <ul class="paddingUl">
+              <li><p>Contact</p></li>
+              <li><p>Sitemap</p></li>
+              <li><a href="https://www.unilever.nl/legal.html">Professionals</a></li>
+            </ul>
+          </section>
+        </div>
+      </section>
     </footer>
+
 
 <script src="scripts/script.js"></script>
   </body>
