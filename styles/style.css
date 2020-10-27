@@ -1,7 +1,7 @@
 html,body {
   /* width: 100%; */
   height: auto;
-  background-image: url(images/achtergrond.jpg);
+  background-image: url(blokweb/images/achtergrond.jpg);
   margin: 0;
   background-repeat: round;
   overflow: scroll;
