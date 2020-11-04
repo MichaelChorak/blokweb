@@ -39,6 +39,30 @@ En de kaarten krijgen deze attributen mee;
   animation-fill-mode: forwards;
 }
 ```
+
+De producten hebben een hover animatie meegekregen
+```
+@keyframes spin {
+  from {transform: rotateX(0deg); }
+  to {transform: rotateX(359deg);}
+}
+
+.product1 > a > img:hover {
+  animation-name: spin;
+  animation-duration: 1700ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+.product1 > img:hover {
+  animation-name: spin;
+  animation-duration: 1700ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+```
+De 2e product zit gewrapped in een anchor want deze is clickable gemaakt zodat je naar de detailpagina gaat. Daarom is het 2e css gedeelte nodig.
+
+
 De animation-fill-mode zorgt er voor dat de afbeelding blijft ingezoomd zolang je muis er overheen hovert.
 
 - Headings\
@@ -53,6 +77,8 @@ De animation-fill-mode zorgt er voor dat de afbeelding blijft ingezoomd zolang j
       
    Qua uiterlijk heb ik niks veranderd. Ik heb alle px verwijderd (alleen voor de borders en web-shadows niet) en heb deze gewijzigd in EM/REM/VH/VW.
    De code is nu wat semantischer dan de vorige keer en wat beter gestructueerd. 
+   
+   Ook heb ik alle overbodige code verwijdert die er in stonden maar helemaal niks deden. Dus het is een schoner bestand geworden.
    
    
       
