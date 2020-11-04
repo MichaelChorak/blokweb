@@ -3,15 +3,101 @@ Michael Chorak
 
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
-
-
 ## Bronnenlijst
- - https://www.w3schools.com/
- - https://www.stackoverflow.com/
- -https://dlo.mijnhva.nl/d2l/le/content/192602/Home (opdrachten DLO)
- - https://www.google.com
- - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
- - https://css-tricks.com/
+
+ - https://dlo.mijnhva.nl/d2l/le/content/192602/Home (opdrachten DLO)
+ - CSS Animation property stays after animating. (2012, 19 maart). Stack Overflow. https://stackoverflow.com/questions/9774829/css-animation-property-stays-after-animating
+ - Coyier, C. (2020, 22 oktober). A Complete Guide to Flexbox. CSS-Tricks. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+ - Web Dev Simplified. (2019, 23 juli). Build Tabs Using HTML/CSS In Only 12 Minutes. YouTube. https://www.youtube.com/watch?v=5L6h_MrNvsk&ab_channel=EasyTutorials
+ - Flexbox: center horizontally and vertically. (2013, 26 september). Stack Overflow. https://stackoverflow.com/questions/19026884/flexbox-center-horizontally-and-vertically
+ - Richards, A. (2020, 3 februari). Const vs Let vs Var in Javascript. Which One Should You Use? Medium. https://levelup.gitconnected.com/const-vs-let-vs-var-in-javascript-which-one-should-you-use-c56cf9b9e2a3
+
+
+
+## Herkansing (week 8)
+- Active/hover states
+  - De buttons hebben een :hover state gekregen.
+ Een lineare gradient naar rechts met 3 states; 0% 40% 100% -> van 0% t/m 40% krijgt dit element een kleur van rgba(255,255,255,0) en van 40% tot 100% een kleurcode van (255,255,255,0.7).
+ 
+- De kaarten met afbeeldingen hebben ook een :hover state meegekregen. Hiervoor heb ik een keyframe gemaakt;
+ 
+ ```@keyframes zoomIn {
+  from {transform: scale(1);
+  }
+  to {transform: scale(1.1);
+  }
+}
+```
+En de kaarten krijgen deze attributen mee;
+```
+.receptKaart > img:hover {
+  animation-name: zoomIn;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+```
+
+De producten hebben een hover animatie meegekregen
+```
+@keyframes spin {
+  from {transform: rotateX(0deg); }
+  to {transform: rotateX(359deg);}
+}
+
+.product1 > a > img:hover {
+  animation-name: spin;
+  animation-duration: 1700ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+.product1 > img:hover {
+  animation-name: spin;
+  animation-duration: 1700ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+```
+De 2e product zit gewrapped in een anchor want deze is clickable gemaakt zodat je naar de detailpagina gaat. Daarom is het 2e css gedeelte nodig.
+
+
+De animation-fill-mode zorgt er voor dat de afbeelding blijft ingezoomd zolang je muis er overheen hovert.
+
+- Headings\
+  H1 is nu nog maar 1x op de pagina te zien en de rest hebben andere headings meegekregen.
+ 
+ - Javascript
+   - Const en var zijn nu allemaal var
+    - Const values kunnen niet veranderd worden en het is block-scoped dus je kan het alleen gebruiken in het block waar je const staat
+    - Var kan je overal gebruiken zolang hij nog niet gedeclareerd is
+    
+     - Bron: Richards, A. (2020, 3 februari). Const vs Let vs Var in Javascript. Which One Should You Use? Medium. https://levelup.gitconnected.com/const-vs-let-vs-var-in-javascript-which-one-should-you-use-c56cf9b9e2a3
+      
+   Qua uiterlijk heb ik niks veranderd. Ik heb alle px verwijderd (alleen voor de borders en web-shadows niet) en heb deze gewijzigd in EM/REM/VH/VW.
+   De code is nu wat semantischer dan de vorige keer en wat beter gestructueerd. 
+   
+   Ook heb ik alle overbodige code verwijdert die er in stonden maar helemaal niks deden. Dus het is een schoner bestand geworden.
+   
+   
+  - Bronnenlijst
+    - De bronnenlijst is ge-update in APA style.
+
+ - Inschrijfform
+   - Deze heeft een maximale en minimale vh meegekregen zodat deze niet te groot wordt op het grote scherm.
+   
+   ![index](images/1-ss1.png)
+   ![index](images/1-ss2.png)
+   ![index](images/1-ss3.png)
+   ![index](images/1-ss4.png)
+   ![index](images/1-ss5.png)
+   ![index](images/1-ss6.png)
+   
+   ![detailpagina](images/2-ss1.png)
+   ![detailpagina](images/2-ss2.png)
+   ![detailpagina](images/2-ss3.png)
+   ![detailpagina](images/2-ss4.png)
+   ![detailpagina](images/2-ss5.png)
+
 
 
 
