@@ -1,7 +1,7 @@
 html,body {
   /* width: 100%; */
   height: auto;
-  background-image: url(/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/images/achtergrond.jpg);
+  background-image: url(/blokweb/images/achtergrond.jpg);
   margin: 0;
   background-repeat: round;
   overflow: scroll;
@@ -10,17 +10,17 @@ html,body {
 
 @font-face {
   font-family: unoxFont;
-  src: url(/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/fonts/eveleth/eveleth_regular.ttf);
+  src: url(/blokweb/fonts/eveleth/eveleth_regular.ttf);
 }
 
 @font-face {
   font-family: unoxSubFont;
-  src: url(/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/fonts/mariDavid/MARI&DAVID.ttf);
+  src: url(/blokweb/fonts/mariDavid/MARI&DAVID.ttf);
 }
 
 @font-face {
   font-family: unoxPfont;
-  src: url(/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/fonts/condensed/OpenSans-CondLight.ttf);
+  src: url(/blokweb/fonts/condensed/OpenSans-CondLight.ttf);
 }
 h1, h2, h3, h4 {
   font-family: unoxFont;
@@ -186,7 +186,7 @@ header > .menuItems {  /*hamburger menu */
 .hamburgerMenu {
   background-color: #fff;
   border: none;
-  background-image: url(/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/images/product/hamburgerMenuBG.png);
+  background-image: url(/blokweb/images/product/hamburgerMenuBG.png);
   height: 3vw;
   width: 5vw;
   background-size: contain;
@@ -222,7 +222,7 @@ header > .menuItems {  /*hamburger menu */
   main > section:nth-of-type(1) {
   height: 35vh;
   width: 100vw;
-  background-image: url(/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/images/bgheader.jpg);
+  background-image: url(/blokweb/images/bgheader.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -491,7 +491,7 @@ main > section:nth-of-type(4) > h2 {
   flex-direction: column;
   align-items: center;
   margin: 15% 5% 5% 5%;
-  background-image: url(/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/images/briefbg.jpg);
+  background-image: url(/blokweb/images/briefbg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
@@ -580,7 +580,7 @@ section:last-of-type > div > form > button {
 footer > section {
   position: relative;
   height: auto;
-  background-image: url(/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/images/footerbg.jpg);
+  background-image: url(/blokweb/images/footerbg.jpg);
   background-repeat: repeat-x;
   background-size: cover;
   background-color: #4f5360;
@@ -854,7 +854,7 @@ section:last-of-type > div > form > button {
 /* DETAILPAGINA CSS STYLING BEGINT HIER */
 
 #inleidingDetails {
-  background-image: url(/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/images/bgdetail.jpg);
+  background-image: url(/blokweb/images/bgdetail.jpg);
   height: 130vh;
   position: relative;
 }
@@ -968,7 +968,7 @@ section:last-of-type > div > form > button {
 /* einde */
 
 #tabsStructuur {
-  background-image: url(/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/images/tabbg.jpg);
+  background-image: url(/blokweb/images/tabbg.jpg);
   height: auto;
   width: 100vw;
   color: #ffffff;
