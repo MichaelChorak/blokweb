@@ -20,7 +20,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
   - De buttons hebben een :hover state gekregen.
  Een lineare gradient naar rechts met 3 states; 0% 40% 100% -> van 0% t/m 40% krijgt dit element een kleur van rgba(255,255,255,0) en van 40% tot 100% een kleurcode van (255,255,255,0.7).
  
- De kaarten met afbeeldingen hebben ook een :hover state meegekregen. Hiervoor heb ik een keyframe gemaakt;
+- De kaarten met afbeeldingen hebben ook een :hover state meegekregen. Hiervoor heb ik een keyframe gemaakt;
  
  ```@keyframes zoomIn {
   from {transform: scale(1);
@@ -29,7 +29,15 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
   }
 }
 ```
-En de kaarten krijgen deze attributen mee
+En de kaarten krijgen deze attributen mee;
+```
+.receptKaart > img:hover {
+  animation-name: zoomIn;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+```
 
 
 ## Eindgesprek (week 7/8)
