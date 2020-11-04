@@ -84,6 +84,8 @@ De animation-fill-mode zorgt er voor dat de afbeelding blijft ingezoomd zolang j
   - Bronnenlijst
     - De bronnenlijst is ge-update in APA style.
 
+ - Inschrijfform
+   - Deze heeft een maximale en minimale vh meegekregen zodat deze niet te groot wordt op het grote scherm.
 
 ## Eindgesprek (week 7/8)
 
