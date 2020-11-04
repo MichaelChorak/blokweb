@@ -4,13 +4,24 @@ html,body {
   background-image: url(/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/images/achtergrond.jpg);
   margin: 0;
   background-repeat: round;
+  overflow: scroll;
 }
+
 
 @font-face {
   font-family: unoxFont;
   src: url(/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/fonts/eveleth/eveleth_regular.ttf);
 }
 
+@font-face {
+  font-family: unoxSubFont;
+  src: url(/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/fonts/mariDavid/MARI&DAVID.ttf);
+}
+
+@font-face {
+  font-family: unoxPfont;
+  src: url(/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/fonts/condensed/OpenSans-CondLight.ttf);
+}
 h1, h2, h3, h4 {
   font-family: unoxFont;
   font-weight: normal;
@@ -18,6 +29,7 @@ h1, h2, h3, h4 {
 
 ul {
   list-style-type: none;
+  font-family: unoxSubFont;
 
 }
 
@@ -25,67 +37,158 @@ a {
   color: #ffffff;
 }
 
-.sectionNieuw > div > h1 {
-  color: #ffffff;
-  font-size: 40px;
-  margin-top: -32%;
+/* keyframes */
+@keyframes spin {
+  from {transform: rotateX(0deg); }
+  to {transform: rotateX(359deg);}
 }
+
+.product1 > a > img:hover {
+  animation-name: spin;
+  animation-duration: 1700ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+.product1 > img:hover {
+  animation-name: spin;
+  animation-duration: 1700ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+
+@keyframes zoomIn {
+  from {transform: scale(1);
+  }
+  to {transform: scale(1.1);
+  }
+}
+
+h4 {
+  margin: 0;
+}
+
+
+/* Active states */
+
+a:active {
+  text-decoration: underline;
+  -webkit-column-rule: ;
+  -moz-column-rule: ;
+  column-rule: ;brown
+}
+
+a:hover {
+  text-decoration: underline;
+  color: brown;
+  font-size: 1em;
+}
+/* button lees hier verder */
+main > section:nth-of-type(1) > button:hover {
+background-color:#000000;
+background-image:linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,.7) 100%);
+background-repeat:no-repeat;
+background-size: 200% 100%;
+transition:background-size 1s, background-color 1s;
+color: #ffffff;
+}
+
+.receptKaart > img:hover {
+  animation-name: zoomIn;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.cardTip > img:hover {
+  animation-name: zoomIn;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; /* dit zorgt er voor dat de afbeelding ingezoomd blijft zolang je hovert */
+}
+
+/* schrijf je in button*/
+.nieuwsbrief > button:hover {
+  background-color:#000000;
+  background-image:linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,.7) 100%);
+  background-repeat:no-repeat;
+  background-size: 200% 100%;
+  transition:background-size 1s, background-color 1s;
+  color: #ffffff;
+}
+
+
+/* einde active states */
 
 main {
   display: grid;
+  /* overflow: auto; */
 }
 
 header {
-  height: auto;
+  height: 10vh;
+  width: 100vw;
   position: sticky;
   top: 0;
   background-color: #ffffff;
   z-index: 10;
-}
-
-header > section {
-  width: 100%;
-  height: auto;
   display: flex;
   background-color: #ffffff;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
-header > section > img {
-  width: 30%;
-  height: 30%;
-  margin: 2%;
+
+header img {
+  height: 6vh;
+  margin-left: 2%;
+  position: absolute;
+  left: 5%;
+}
+.menuItems {
+  position: relative;
 }
 
-#menuItems > div > ul {  /* menu items*/
+.menuItems > ul {  /* menu items*/
   list-style-type: none;
   color: #432e1b;
-  font-size: 1.25rem;
-  font-weight: 300;
-  line-height: .71;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.5;
   text-transform: uppercase;
   font-style: normal;
   text-decoration: none;
   white-space: nowrap;
 }
 
-#menuItems  > ul > li {
-  margin-bottom: 15%;
+.menuItems > div {
+  background-color: brown;
+  height: 2em;
+  width: 2em;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  transform: translateX(-3.5em);
 }
 
-header > section:first-of-type > div {  /*hamburger menu */
+.menuItems > nav > ul > li {
+  margin-bottom: 15%;
+  font-family: unoxSubFont;
+}
+
+header > .menuItems {  /*hamburger menu */
   height: 100vh;
   position: absolute;
-  right: 0;
   top: 0;
+  right: 0;
   opacity: 0;
   transition: 0.7s;
+  transform: translateX(0vw);
 }
 
 .fadeIn {   /* VOOR HAMBURGER MENU */
   opacity: 1 !important;
-  transform: translateX(0%);
+  transform: translateX(0);
   z-index: 1;
   background-color: #fff;
   width: 85% !important;
@@ -95,18 +198,41 @@ header > section:first-of-type > div {  /*hamburger menu */
   background-color: #fff;
   border: none;
   background-image: url(/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/images/product/hamburgerMenuBG.png);
-  height: 45px;
-  width: 45px;
+  height: 3vw;
+  width: 5vw;
   background-size: contain;
   background-repeat: no-repeat;
   margin-right: 5%;
   z-index: 10;
+  position: absolute;
+  right: 4em;
 }
 
+.groteSchermNav {
 
+}
+
+.groteSchermNav > ul{
+  display: flex;
+}
+
+.groteSchermNav > ul > li {
+  font-size: 2em;
+  margin-left: 2vw;
+  font-family: 'unoxSubFont';
+  color: #432e1b;
+  font-weight: 700;
+  line-height: .71;
+  text-transform: uppercase;
+  font-style: normal;
+  text-decoration: none;
+  white-space: nowrap;
+  margin: 0.5em;
+}
 
   main > section:nth-of-type(1) {
-  height: 225px;
+  height: 35vh;
+  width: 100vw;
   background-image: url(/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/images/bgheader.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -115,7 +241,7 @@ header > section:first-of-type > div {  /*hamburger menu */
   justify-content: center;
   flex-direction: column;
   align-items: center;
-
+  position: relative;
 }
 
 
@@ -124,45 +250,42 @@ main > section:nth-of-type(1) > button {
   width: 80%;
   border: none;
   border-radius: 5px;
-  font-family: Open Sans Condensed,sans-serif;
-  font-weight: 700;
+  font-family: unoxPfont;
+  font-weight: 900;
   line-height: normal;
   background-color: #ffffff;
-  font-size: 13px;
+  font-size: 1em;
   color: #432e1b;
   text-transform: uppercase;
-  margin-top: 7%
+  background-size: 0% 100%;
 }
 
-  main > section:nth-of-type(1) > div > h1 {
+  main > section:nth-of-type(1) > h1 {
   color: #ffffff;
-  font-size: 2.5em;
-  margin-top: -25%;
+  font-size: 2.25em;
   text-transform: uppercase;
   font-family: unoxFont;
-}
-
-
-
-  .divHR {
-  height: 80px;
+  padding: 0;
+  margin: 0;
   position: relative;
-  padding-bottom: 10%;
+  bottom: 25%;
 }
 
-.universalHR {
-  width: 80%;
-  color: brown;
-}
 
 /* Favoriete producten sectie */
 
 main > section:nth-of-type(2){
   position: relative;
-  height: 600px;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: auto;
+}
+
+main > section:nth-of-type(2) > div {
+  display: flex;
+  flex-direction: row;
 }
 
 
@@ -170,16 +293,30 @@ main > section:nth-of-type(2){
 .product1 {
   position: relative;
   text-align: center;
+  margin: 5%;
+}
 
+.product1 > h3 {
+  font-family: unoxSubFont;
+  font-weight: bold;
+  font-size: 2.125em;
+  color: #432e1b;
+  margin: 5%
 }
 
 .product1 > img {
   background-size: cover;
-  max-width:75%;
-  max-height:100%;
+  max-width: 45vw;
+  max-height: 30vh;
 }
 
-main > section:nth-of-type(2) > div {
+.product1 > a > img {
+  background-size: cover;
+  max-width: 45vw;
+  max-height: 30vh;
+}
+
+main > section:nth-of-type(2) > h2 {
   text-align: center;
   font-size: 2.125em;
   color: #432e1b;
@@ -189,14 +326,9 @@ main > section:nth-of-type(2) > div {
   font-family: unoxFont;
 }
 
-main > section:nth-of-type(2) > div > h2 {
-  font-size: 34px;
-
-}
 
 main > section:nth-of-type(2) > a {
   text-align: center;
-  bottom: 40px;
   background-color: transparent;
   color: #432e1b;
   font-size: 1.125rem;
@@ -220,50 +352,60 @@ main > section:nth-of-type(2) > hr {
 /* Recepten sectie */
 
 main > section:nth-of-type(3) {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   position: relative;
-  height: 600px;
-  margin-top: 12%;
-
+  margin-top: 5vh;
+  text-align: center;
+  overflow: auto;
 }
 
-main > section:nth-of-type(3) > div {
-  text-align: center;
-  font-size: 2.325rem;
+main > section:nth-of-type(3) > h3 {
+text-align: center;
+font-size: 2.325rem;
 font-weight: 300;
 line-height: 1;
 font-style: normal;
 font-family: unoxFont;
 position: relative;
+}
+
+.receptKaart > img {
+width: 100%;
+height: auto;
 
 }
 
-
-/* card test */
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.container {
-  padding: 2px 16px;
-  height: 175px;
-}
-
-.container > p {
+.receptKaart > p {
   font-family: unoxFont;
-  font-size: 0.5em;
+  font-size: 0.75em;
   text-align: left;
+  /* margin: 5%; */
+  margin-left: 2vw;
+  padding-bottom: 17%;
+  padding-right: 1vw;
+  color: #432e1b!important
 }
 
-main > section:nth-of-type(3) > div:nth-child(2){
+.container {  /*parent*/
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  transform: translateX(35vw);
 }
 
+.receptKaart{ /* Child */
+  height: auto;
+  width: 40vw;
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  margin: 1%;
+  overflow-wrap: break-word;
+  overflow: hidden;
+}
 
-main > section:nth-of-type(3) > a {
-  position: absolute;
-  bottom: 110px;
-  margin-left: 25%;
+a {
   background-color: transparent;
   color: #432e1b;
   font-size: 1.125rem;
@@ -273,7 +415,9 @@ main > section:nth-of-type(3) > a {
   font-style: normal;
   text-decoration: none;
   font-family: Open Sans Condensed,sans-serif;
-  transition: 0.3s
+  transition: 0.3s;
+  text-align: center;
+  margin-top: 5vh;
 }
 
 
@@ -284,7 +428,14 @@ main > section:nth-of-type(4) {
   flex-direction: column;
 }
 
-main > section:nth-of-type(4) > div > h2 {
+main > section:nth-of-type(4) > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main > section:nth-of-type(4) > h2 {
   text-align: center;
   font-size: 2.125em;
   color: #432e1b;
@@ -292,42 +443,33 @@ main > section:nth-of-type(4) > div > h2 {
   font-style: normal;
   line-height: 1;
   font-family: unoxFont;
+  padding-top: 5vh;
 }
 
 /* custom css voor de kooktips cards */
-.containerTip{
-  height: 125px;
-  padding: 2px 16px;
-  transition: .5s;
-}
 
-
-
-.card-PositionTip{
-display: flex;
-justify-content: center;
-}
 
 .cardTip {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 90%;
-  height: 50%;
+  height: auto;
   background-color: #ffffff;
   overflow-wrap: break-word;
   margin-top: 10%;
+  overflow: hidden;
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 55%;
+  width: 50vw;
+  height: 50vh;
   background-color: #ffffff;
   overflow-wrap: break-word;
-
 }
 
-.containerTip > p {
+.cardTip > h3 {
   text-align: left;
   font-size: 1.4em;
   color: #432e1b;
@@ -335,12 +477,23 @@ justify-content: center;
   font-style: normal;
   line-height: 1;
   font-family: unoxFont;
+  margin: 2%;
+  padding: 1vh;
 }
 
+.cardTip > p {
+  font-family: unoxPfont;
+  margin: 2%;
+  padding: 2%;
+}
+
+.cardTip > hr {
+  width: 96%;
+}
 
 /* nieuwsbrief section, section 5 */
-main > section:nth-of-type(5) {
-  height: 350px;
+.nieuwsbrief {
+  height: 23vw !important;
   border: 5px solid #ffffff;
   display: flex;
   text-align: center;
@@ -348,21 +501,23 @@ main > section:nth-of-type(5) {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin: 30% 5% 5% 5%;
-  background-image: url(/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/images/recept1.jpg);
+  margin: 15% 5% 5% 5%;
+  background-image: url(/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/images/briefbg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50%;
   font-family: unoxFont;
   font-style: normal;
   line-height: 1;
+
 }
 
-main > section:nth-of-type(5) > h1 {
+.nieuwsbrief > h4 {
   font-size: 2.2em;
 }
 
-main > section:nth-of-type(5) > button {
-  height: 10%;
+.nieuwsbrief > button {
+  height: 2.2em;
   width: 80%;
   border: none;
   border-radius: 3px;
@@ -370,21 +525,37 @@ main > section:nth-of-type(5) > button {
   font-weight: 700;
   line-height: normal;
   background-color: #ffffff;
-  font-size: 13px;
+  font-size: 1em;
   color: #432e1b;
   text-transform: uppercase;
-  margin-top: 7%
+  margin-top: -0.5em;
 }
 
 
 /* footer sectie */
 footer {
   height: auto;
+  position: relative;
+}
+
+#scrollBtn {
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  border: none;
+  position: absolute;
+  top: -1.25em;
+  left: 1em;
+  z-index: 1;
+  border: 1px solid;
+  /* box-shadow: 0 0 #dacbcb; */
+  -webkit-box-shadow: -4px 3px 32px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: -4px 3px 32px -12px rgba(0,0,0,0.75);
+  box-shadow: -4px 3px 32px -12px rgba(0,0,0,0.75);
 }
 
 
-
-footer > section > div:nth-of-type(1) > h3 {
+footer > section > h3 {
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.33;
@@ -399,23 +570,22 @@ section:last-of-type > div > form > input {
   background-color: hsla(32,28%,82%,.13);
   color: #fff;
   border-radius: 5px;
-  height: center;
   display: inline-flex;
   border: none;
   justify-content: center;
-  height: 40px;
-  width: 289px;
-  margin-left: 4%;
+  max-height: 7vh;
+  min-height: 3vh;
+  width: 80vw;
   float: left;
 }
 
 section:last-of-type > div > form > button {
-  height: 40px;
-  width: 46px;
+  height: 7vw;
+  width: 10vw;
   border: none;
   border-radius: 0px 5px 5px 0px;
-  margin-top: 1px;
-  margin-left: -4px;
+  max-height: 7vh;
+  min-height: 3vh;
 }
 
 footer > section {
@@ -435,19 +605,26 @@ footer > section > section:nth-of-type(1) > ul {
 
 .paddingUl {
   padding: 0;
+    font-family: unoxPfont;
 }
 
-footer > section > div:nth-of-type(3) > * {
+footer > section > * {
   color: white;
   margin-left: 5%;
+
 }
 
-.sectionPadding {
-  padding-bottom: 35px;
+footer > section > section > ul > li > a {
+  color: #ffffff !important;
 }
 
+footer > section > section > p > a {
+  color: #ffffff !important;
+}
 
-
+footer > section > section:nth-of-type(3) {
+  padding-bottom: 2em;
+}
 .gek {
   opacity: 0;
   animation: fallDown 2s linear forwards;
@@ -464,4 +641,376 @@ footer > section > div:nth-of-type(3) > * {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Media query;s */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  .groteSchermNav {
+    display: none;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (max-width : 769px) {
+  /* Styles */
+  .groteSchermNav {
+    display: none;
+  }
+
+  .nieuwsbrief {
+    height: 45vh !important;
+  }
+
+  #inleidingDetails > img {
+    max-width: 72% !important;
+  }
+}
+
+@media only screen
+and (max-width: 979px){
+  .cardTip > p {
+    display: none;
+  }
+
+}
+
+@media only screen
+and (min-width: 979px)
+and (max-width: 1024px) {
+  main > section:nth-of-type(4) > div {
+    flex-wrap: nowrap !important;
+  }
+}
+
+
+
+@media only screen
+and (min-width : 769px) {
+  /* Styles */
+  .hamburgerMenu{
+    display: none;
+  }
+
+  .container {
+    transform: translateX(1vw);
+  }
+
+}
+
+@media only screen
+and (min-device-width : 1024px) {
+  .receptKaart {
+    max-width: 20vw;
+  }
+
+  main > section:nth-of-type(3) {
+    overflow:
+  }
+
+  #inleidingDetails > img {
+    max-width: 42%;
+  }
+
+  main > section:nth-of-type(4) > div {
+    flex-wrap: nowrap !important;
+  }
+}
+
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+  .receptKaart {
+      width: 30vw;
+      margin: 1%;
+  }
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+  .receptKaart {
+      height: 40vh;
+      width: 40vw;
+      position: relative;
+      background-color: #ffffff;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      /* margin-left: 1%; */
+      /* padding: 0px; */
+      margin: 1%;
+    }
+
+    #inleidingDetails > img {
+      left: -10%;
+      width: 75% !important;
+    }
+  }
+
+  @media only screen and
+  (min-device-width: 877px){
+    #inleidingDetails > img {
+      left: 0;
+      width: 60% !important;
+    }
+  }
+
+  @media only screen
+  and (min-device-width : 768px) {
+    .inleidingDetailsOnder {
+      display: contents;
+      position: absolute !important;
+      bottom: 0 !important;
+    }
+
+    #inleidingDetails {
+      height: 80vh !important;
+    }
+
+    #inleidingDetails  > img {
+      /* position: absolute !important;
+      top: 5% !important;
+      left: -15% !important;
+      width: 80% !important; */
+      max-width: 42em;
+    }
+
+    #inleidingDetails > div {
+    border: 12px solid;
+    height: 92%;
+    width: 45%;
+    position: absolute;
+    left: 0;
+    }
+
+    #inleidingDetails > section > button {
+      bottom: 25% !important;
+    }
+
+
+    .testClass {
+      background-color: rgba(67,46,27,.7);
+      width: 45%;
+      height: 64%;
+      position: absolute;
+      top: 8%;
+      right: 5%;
+      word-wrap: break-word;
+    }
+
+    .testClass > h1 {
+      font-size: 3em;
+    }
+  }
+
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+
+main > section:nth-of-type(1) > h1 {
+  font-size: 6em;
+  }
+  main > section:nth-of-type(1) > button {
+    width: 10%;
+    height: 13%;
+  }
+
+
+}
+
+
+
+/* Unox sizes screens */
+@media only screen
+and (min-width : 669px) {
+  main > section:nth-of-type(1) > button {
+    height: 2.5em;
+    min-width: auto;
+    width: 9em;
+  }
+
+
+section:last-of-type > div > form > input {
+  height: 5vw;
+}
+
+section:last-of-type > div > form > button {
+  height: 5vw;
+}
+
+.cardTip {
+  width: calc(45% - 0px);
+  justify-content: center;
+  margin: 2%;
+}
+
+  main > section:nth-of-type(4) > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* DETAILPAGINA CSS STYLING BEGINT HIER */
+
+#inleidingDetails {
+  background-image: url(/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/images/bgdetail.jpg);
+  height: 130vh;
+  position: relative;
+}
+
+
+.HRbreed {
+  color: white;
+  width: 65%;
+
+
+}
+#inleidingDetails > img {
+  width: 90%;
+   height: auto;
+   top: 2vh;
+   position: absolute;
+}
+
+#inleidingDetails > section > h1 {
+  margin: 5%;
+  font-weight: 300;
+  line-height: 5vh;
+  position: initial;
+  color: #ffffff;
+}
+
+
+#inleidingDetails > section > p{
+  font-family: unoxFont;
+  font-size: 1em;
+  color: #ffffff;
+  line-height: 1.5;
+  text-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.5);
+  font-style: normal;
+  font-family: Open Sans Condensed,sans-serif;
+  margin: 0% 5%;
+}
+
+#inleidingDetails > section > button {
+  height: 2.5em;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 35%;
+  background-color: #fff;
+  color: #432e1b;
+  font-size: 0.9em;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Open Sans Condensed,sans-serif;
+  width: 85%;
+  border: none;
+  margin-left: 8%;
+}
+
+#inleidingDetails > section > button:hover {
+  background-color:#000000;
+  background-image:linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,.7) 100%);
+  background-repeat:no-repeat;
+  background-size: 200% 100%;
+  transition:background-size 1s, background-color 1s;
+  color: #ffffff;
+}
+
+
+
+.inleidingDetailsOnder {
+  width: 100vw;
+  height: 15vh;
+  position: absolute;
+  bottom: 15vh;
+}
+
+.inleidingDetailsOnder > a {
+  text-decoration: none;
+  margin: 5% 0% 0% 10%;
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.5);
+}
+
+.inleidingDetailsOnder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 10vh;
+  width: 100vw;
+}
+
+.inleidingDetailsOnder > span {
+  font-size: 1.5em;
+  color: #ffffff;
+  margin-left: 5%;
+}
+
+/* // data tab content css */
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+#tabsStructuur > ul > li:active{
+  text-decoration: underline;
+}
+/* einde */
+
+#tabsStructuur {
+  background-image: url(/HvA/leerjaar_2/front-end/herontwerp-basiswebsite/images/tabbg.jpg);
+  height: auto;
+  width: 100vw;
+  color: #ffffff;
+  font-family: unoxPfont;
+  font-size: 1em;
+}
+
+#tabsStructuur > ul > li {
+  font-size: 3em;
+}
+
+#tabsStructuur > ul {
+  padding-left: 4vw;
+}
+
+#tabsStructuur > ul > li {
+  padding-bottom: 2vh;
+}
+
+#tabsStructuur > div > div{
+  margin: 3.5%;
+}
+
+.pTabContent {
+  font-size: 2.25em;
+}
+
+
+/*  d a r k m o d e s t y l i n g */
+
+.headerDarkMode {
+  background-color: #000000;
+  color: #ffffff;
 }
