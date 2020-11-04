@@ -12,6 +12,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
  - Coyier, C. (2020, 22 oktober). A Complete Guide to Flexbox. CSS-Tricks. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
  - Web Dev Simplified. (2019, 23 juli). Build Tabs Using HTML/CSS In Only 12 Minutes. YouTube. https://www.youtube.com/watch?v=5L6h_MrNvsk&ab_channel=EasyTutorials
  - Flexbox: center horizontally and vertically. (2013, 26 september). Stack Overflow. https://stackoverflow.com/questions/19026884/flexbox-center-horizontally-and-vertically
+ - Richards, A. (2020, 3 februari). Const vs Let vs Var in Javascript. Which One Should You Use? Medium. https://levelup.gitconnected.com/const-vs-let-vs-var-in-javascript-which-one-should-you-use-c56cf9b9e2a3
 
 
 
@@ -50,6 +51,10 @@ De animation-fill-mode zorgt er voor dat de afbeelding blijft ingezoomd zolang j
     
      - Bron: Richards, A. (2020, 3 februari). Const vs Let vs Var in Javascript. Which One Should You Use? Medium. https://levelup.gitconnected.com/const-vs-let-vs-var-in-javascript-which-one-should-you-use-c56cf9b9e2a3
       
+   Qua uiterlijk heb ik niks veranderd. Ik heb alle px verwijderd (alleen voor de borders en web-shadows niet) en heb deze gewijzigd in EM/REM/VH/VW.
+   De code is nu wat semantischer dan de vorige keer en wat beter gestructueerd. 
+   
+   
       
 
 
