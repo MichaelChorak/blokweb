@@ -82,7 +82,7 @@ De animation-fill-mode zorgt er voor dat de afbeelding blijft ingezoomd zolang j
    
    
   - Bronnenlijst
-   - De bronnenlijst is ge-update in APA style.
+    - De bronnenlijst is ge-update in APA style.
 
 
 ## Eindgesprek (week 7/8)
