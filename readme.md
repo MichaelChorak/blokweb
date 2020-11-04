@@ -38,6 +38,16 @@ En de kaarten krijgen deze attributen mee;
   animation-fill-mode: forwards;
 }
 ```
+De animation-fill-mode zorgt er voor dat de afbeelding blijft ingezoomd zolang je muis er overheen hovert.
+
+- Headings
+ - H1 is nu nog maar 1x op de pagina te zien en de rest hebben andere headings meegekregen.
+ 
+ - Javascript
+  - Const en var zijn nu allemaal var
+   - Const values kunnen niet veranderd worden en het is block-scoped dus je kan het alleen gebruiken in het block waar je const staat
+   - Var kan je overal gebruiken zolang hij nog niet gedeclareerd is
+  Bron: Richards, A. (2020, 3 februari). Const vs Let vs Var in Javascript. Which One Should You Use? Medium. https://levelup.gitconnected.com/const-vs-let-vs-var-in-javascript-which-one-should-you-use-c56cf9b9e2a3
 
 
 ## Eindgesprek (week 7/8)
