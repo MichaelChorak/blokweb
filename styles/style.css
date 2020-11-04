@@ -70,7 +70,16 @@ h4 {
 
 
 /* Active states */
+a:active {
+  text-decoration: underline;
+  color: brown
+}
 
+a:hover {
+  text-decoration: underline;
+  color: brown;
+  font-size: 1em;
+}
 
 /* button lees hier verder */
 main > section:nth-of-type(1) > button:hover {
