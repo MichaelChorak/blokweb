@@ -18,6 +18,19 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 - Active/hover states
   - De buttons hebben een :hover state gekregen.
  Een lineare gradient naar rechts met 3 states; 0% 40% 100% -> van 0% t/m 40% krijgt dit element een kleur van rgba(255,255,255,0) en van 40% tot 100% een kleurcode van (255,255,255,0.7).
+ - De linkjes waarmee je alle producten kan kijken hebben een active en hover state mee gekregen.
+ ```
+ a:active {
+  text-decoration: underline;
+  color: brown
+}
+
+a:hover {
+  text-decoration: underline;
+  color: brown;
+  font-size: 1em;
+}
+ ```
  
 - De kaarten met afbeeldingen hebben ook een :hover state meegekregen. Hiervoor heb ik een keyframe gemaakt;
  
