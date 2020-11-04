@@ -6,12 +6,12 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
- - https://www.w3schools.com/
- - https://www.stackoverflow.com/
- -https://dlo.mijnhva.nl/d2l/le/content/192602/Home (opdrachten DLO)
- - https://www.google.com
- - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
- - https://css-tricks.com/
+
+ - https://dlo.mijnhva.nl/d2l/le/content/192602/Home (opdrachten DLO)
+ - CSS Animation property stays after animating. (2012, 19 maart). Stack Overflow. https://stackoverflow.com/questions/9774829/css-animation-property-stays-after-animating
+ - Coyier, C. (2020, 22 oktober). A Complete Guide to Flexbox. CSS-Tricks. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+ - Web Dev Simplified. (2019, 23 juli). Build Tabs Using HTML/CSS In Only 12 Minutes. YouTube. https://www.youtube.com/watch?v=5L6h_MrNvsk&ab_channel=EasyTutorials
+ - Flexbox: center horizontally and vertically. (2013, 26 september). Stack Overflow. https://stackoverflow.com/questions/19026884/flexbox-center-horizontally-and-vertically
 
 
 
