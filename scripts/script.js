@@ -4,8 +4,8 @@ var menu = document.querySelector('.menuItems');
 var btnScroll = document.querySelector('#scrollBtn')
 var buttonDark =  document.querySelector('#btnDarkMode');
 var menuKruis = document.querySelector('#kruisjeMenu');
-const tabs = document.querySelectorAll('[data-tab-target]');
-const tabsContent = document.querySelectorAll('[data-tab-content]')
+var tabs = document.querySelectorAll('[data-tab-target]');
+var tabsContent = document.querySelectorAll('[data-tab-content]')
 
 // //hier komen de elementen die kleuren bij de btnDarkMode
 // var header = document.querySelector('header');
