@@ -85,7 +85,7 @@ De animation-fill-mode zorgt er voor dat de afbeelding blijft ingezoomd zolang j
  - Inschrijfform
    - Deze heeft een maximale en minimale vh meegekregen zodat deze niet te groot wordt op het grote scherm.
    
-   ![index](images/1-ss1.png)
+
    ![index](images/1-ss2.png)
    ![index](images/1-ss3.png)
    ![index](images/1-ss4.png)
